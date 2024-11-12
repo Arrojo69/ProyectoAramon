@@ -49,8 +49,8 @@ body {
   }
   
   .logo-social {  /* Clase para los logos sociales */
-	height: 40px;
-	width: 40px;
+	width: 100px;
+	height: 100px;
   }
   
   .logo-social:hover { /* Hover para los logos sociales */
