@@ -1,81 +1,64 @@
 body {
 	font: 12px Arial, Tahoma, Verdana, sans-serif;
-}
-
-/* DIV CONTENEDOR GENERAL */
-#wrapper {
+  }
+  
+  /* DIV CONTENEDOR GENERAL */
+  #wrapper {
 	max-width: 100%;
 	margin: 0;
-}
-
-/* Header
------------------------------------------------------------------------------*/
-
-body {
+  }
+  
+  /* Header */
+  body {
 	margin-top: 250px;
 	padding: 0;
-	background: url('../images/background.jpeg') no-repeat center fixed; /* Imagen de fondo */
+	background: url('../images/background.jpeg') no-repeat center fixed;
 	background-size: cover; 
   }
-/* Middle
------------------------------------------------------------------------------*/
-#middle {
-    background-color: grey; 
-    overflow: auto;
-}
-
-#content {
-    /*Si no asociamos anchura al content intenta coger el 100% y se coloca en una línea diferente a la del #sideRight*/
+  
+  /* Middle */
+  #middle {
+	background-color: grey; 
+	overflow: auto;
+  }
+  
+  #content {
 	width: 100%;
 	float: center;
-    background-color: grey; 
-}
-/* Footer
------------------------------------------------------------------------------*/
-	#footer {
-		display: flex; 
-		align-items: flex-start; /* Alinea los elementos al inicio del footer */
-		justify-content: space-between; 
-		background: #2F3A4A;
-		padding: 10px;
-	  } 
-  #footer a {
-	text-decoration: none;
-	color: #fff; /* Color del texto */
+	background-color: grey; 
   }
+  
+  /* Footer */
   #footer {
-	/* ... (estilos del footer) */
-	justify-content: space-between; /* Distribuye el espacio entre elementos */
+	display: flex; 
+	align-items: flex-start;
+	justify-content: space-between; 
+	background: #2F3A4A;
+	padding: 10px;
+  } 
+  
+  /* Estilos para los iconos de redes sociales */
+  .logo-social { 
+	width: 40px;
+	height: 40px;
+	fill: white; /* Color inicial del icono (si es SVG) */
   }
   
-  .logo-social {  /* Clase para los logos sociales */
-	width: 100px;
-	height: 100px;
-  }
-  
-  .logo-social:hover { /* Hover para los logos sociales */
+  .logo-social:hover { 
 	transform: scale(1.2);
-	color: #fd8151;
-	transition: color 0.3s ease, transform 0.3s ease;
+	fill: #fd8151; /* Color del icono al pasar el ratón (si es SVG) */
+	transition: fill 0.3s ease, transform 0.3s ease;
   }
   
-  #footer a { /* Estilos generales para los enlaces del footer */
-	text-decoration: none;
-	color: #fff;
-  }
-  
-  #footer [name="empleo"], 
-  #footer [name="ayuda"], 
-  #footer [name="legalidad"] {
+  /* Estilos para los enlaces de texto */
+  .info-adicional {
 	font-size: 15px;
+	text-decoration: underline;
+	color: white;
   }
   
-  #footer [name="empleo"]:hover,
-  #footer [name="ayuda"]:hover,
-  #footer [name="legalidad"]:hover {
-	transform: scale(1.1);
+  .info-adicional:hover {
+	transform: scale(1.2);
+	color: #fd8151; 
 	transition: color 0.3s ease, transform 0.3s ease;
-	text-decoration: underline;
-	color: #fd8151;
   }
-  /*A partir de aqui CSS del contenido de la pagina insertado*/
