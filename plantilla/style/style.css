@@ -35,8 +35,16 @@ body {
 	justify-content: space-between; 
 	background: #2F3A4A;
 	padding: 10px;
-  } 
-  
+	align-items: center;      /* Alinea los elementos verticalmente al centro */
+	  } 
+  .redes {
+		display: flex;           /* Activa flexbox para los iconos */
+		gap: 15px;              /* Espacio entre los iconos */
+	  }
+  .adicionales {
+		display: flex;           /* Activa flexbox para los iconos */
+		gap: 15px;              /* Espacio entre los iconos */
+	  }
   /* Estilos para los iconos de redes sociales */
   .logo-social { 
 	width: 40px;
