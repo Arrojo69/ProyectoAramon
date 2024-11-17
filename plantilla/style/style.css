@@ -9,13 +9,33 @@ body {
   }
   
   /* Header */
-  body {
-	margin-top: 250px;
-	padding: 0;
-	background: url('../images/background.jpeg') no-repeat center fixed;
-	background-size: cover; 
+  .hero-image {
+	background-image: url('../images/background.jpeg');
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh; /* Altura de la ventana */
+	z-index: -1; /* Coloca la imagen detrás del contenido */
   }
   
+  /* Header */
+  header { 
+	position: relative; 
+	z-index: 10; 
+	position: relative; 
+	z-index: 10; 
+	height: 150px; /* Ajusta este valor según la altura de tu logo */
+	  }
+  
+  #logo {
+	position: absolute;
+	top: 50px; 
+	left: 50%;
+	transform: translateX(-50%);
+  }
   /* Middle */
   #middle {
 	background-color: grey; 
