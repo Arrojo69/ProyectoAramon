@@ -69,12 +69,12 @@ body {
   .logo-social { 
 	width: 40px;
 	height: 40px;
-	fill: white; /* Color inicial del icono (si es SVG) */
+	fill: white; 
   }
   
   .logo-social:hover { 
 	transform: scale(1.2);
-	fill: #fd8151; /* Color del icono al pasar el ratón (si es SVG) */
+	fill: #fd8151; 
 	transition: fill 0.3s ease, transform 0.3s ease;
   }
   
@@ -89,4 +89,124 @@ body {
 	transform: scale(1.2);
 	color: #fd8151; 
 	transition: color 0.3s ease, transform 0.3s ease;
+  }
+  /* Estilos para content*/
+  /* Estilos para la sección Empleo */
+#empleo {
+	padding: 40px 0;
+	background-color: #f5f5f5; /* Color de fondo */
+  }
+  
+  #empleo .container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
+  }
+  
+  #empleo h2 {
+	text-align: center;
+	color: #333;
+  }
+  
+  #empleo p {
+	text-align: center;
+	color: #555;
+	margin-bottom: 30px;
+  }
+  
+  /* Buscador de empleo */
+  .buscador-empleo {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 30px;
+  }
+  
+  .buscador-empleo input[type="text"] {
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin-right: 10px;
+	width: 200px;
+  }
+  
+  .buscador-empleo button {
+	background-color: #fd8151; /* Color del botón */
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  /* Categorías de empleo */
+  .categorias-empleo {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 30px;
+  }
+  
+  .categoria {
+	text-align: center;
+	width: 30%;
+  }
+  
+  .categoria img {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+  }
+  
+  .categoria h4 {
+	color: #333;
+  }
+  
+  .categoria p {
+	color: #555;
+  }
+  
+  .categoria a {
+	display: inline-block;
+	background-color: #fd8151; /* Color del botón */
+	color: #fff;
+	padding: 8px 15px;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-top: 10px;
+  }
+  
+  /* Beneficios */
+  .beneficios ul {
+	list-style: disc;
+	padding-left: 40px;
+	color: #555;
+  }
+  
+  /* Testimonios */
+  .testimonios {
+	margin-top: 40px;
+  }
+  
+  .testimonio {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+  }
+  
+  .testimonio img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 20px;
+  }
+  
+  .testimonio p {
+	color: #555;
+  }
+  
+  .nombre {
+	text-align: right;
+	font-style: italic;
   }
