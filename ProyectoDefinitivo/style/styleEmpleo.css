@@ -91,122 +91,346 @@ body {
 	transition: color 0.3s ease, transform 0.3s ease;
   }
   /* Estilos para content*/
-  /* Estilos para la sección Empleo */
+/* Estilos base */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Sección principal de empleo */
 #empleo {
-	padding: 40px 0;
-	background-color: #f5f5f5; /* Color de fondo */
-  }
-  
-  #empleo .container {
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 0 20px;
-  }
-  
-  #empleo h2 {
-	text-align: center;
-	color: #333;
-  }
-  
-  #empleo p {
-	text-align: center;
-	color: #555;
-	margin-bottom: 30px;
-  }
-  
-  /* Buscador de empleo */
-  .buscador-empleo {
-	background-color: #fff;
-	padding: 20px;
-	border-radius: 5px;
-	margin-bottom: 30px;
-  }
-  
-  .buscador-empleo input[type="text"] {
-	padding: 10px;
-	border: 1px solid #ccc;
-	margin-right: 10px;
-	width: 200px;
-  }
-  
-  .buscador-empleo button {
-	background-color: #fd8151; /* Color del botón */
-	color: #fff;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-  }
-  
-  /* Categorías de empleo */
-  .categorias-empleo {
-	display: flex;
-	justify-content: space-around;
-	margin-bottom: 30px;
-  }
-  
-  .categoria {
-	text-align: center;
-	width: 30%;
-  }
-  
-  .categoria img {
-	width: 100px;
-	height: 100px;
-	margin-bottom: 10px;
-  }
-  
-  .categoria h4 {
-	color: #333;
-  }
-  
-  .categoria p {
-	color: #555;
-  }
-  
-  .categoria a {
-	display: inline-block;
-	background-color: #fd8151; /* Color del botón */
-	color: #fff;
-	padding: 8px 15px;
-	border: none;
-	border-radius: 5px;
-	text-decoration: none;
-	margin-top: 10px;
-  }
-  
-  /* Beneficios */
-  .beneficios ul {
-	list-style: disc;
-	padding-left: 40px;
-	color: #555;
-  }
-  
-  /* Testimonios */
-  .testimonios {
-	margin-top: 40px;
-  }
-  
-  .testimonio {
-	background-color: #fff;
-	padding: 20px;
-	border-radius: 5px;
-	margin-bottom: 20px;
-  }
-  
-  .testimonio img {
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	float: left;
-	margin-right: 20px;
-  }
-  
-  .testimonio p {
-	color: #555;
-  }
-  
-  .nombre {
-	text-align: right;
-	font-style: italic;
-  }
+    padding: 60px 0;
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+}
+
+#empleo .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#empleo h2 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #2F3A4A;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+#empleo > p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+}
+
+/* Buscador de empleo */
+.buscador-empleo {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+}
+
+.buscador-empleo h3 {
+    color: #2F3A4A;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.buscador-empleo input[type="text"] {
+    padding: 12px 20px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    width: 300px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.buscador-empleo input[type="text"]:focus {
+    border-color: #fd8151;
+    outline: none;
+}
+
+.buscador-empleo button {
+    background-color: #fd8151;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 10px;
+}
+
+.buscador-empleo button:hover {
+    background-color: #e66f3e;
+    transform: translateY(-2px);
+}
+
+/* Categorías de empleo */
+.categorias-empleo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.categoria {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.categoria:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.categoria img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.categoria:hover img {
+    transform: scale(1.1);
+}
+
+.categoria h4 {
+    color: #2F3A4A;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.categoria p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.categoria a {
+    display: inline-block;
+    background-color: #fd8151;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.categoria a:hover {
+    background-color: #e66f3e;
+    transform: translateY(-2px);
+}
+/* Categorías de empleo - Contenedor principal */
+.categorias-empleo {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cada categoría individual */
+.categoria {
+    flex: 1;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    min-width: 300px;
+    max-width: 350px;
+}
+
+.categoria img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+}
+
+.categoria h4 {
+    color: #2F3A4A;
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.categoria p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    min-height: 60px; /* Asegura altura uniforme para las descripciones */
+}
+
+.categoria a {
+    display: inline-block;
+    background-color: #fd8151;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.categoria a:hover {
+    background-color: #e66f3e;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .categorias-empleo {
+        flex-wrap: wrap;
+    }
+    
+    .categoria {
+        flex: 0 1 calc(50% - 15px);
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .categorias-empleo {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .categoria {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+/* Beneficios */
+.beneficios {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    margin: 50px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.beneficios h3 {
+    color: #2F3A4A;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+}
+
+.beneficios ul {
+    list-style: none;
+    padding: 0;
+}
+
+.beneficios li {
+    padding: 15px 0;
+    padding-left: 30px;
+    position: relative;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.beneficios li:before {
+    content: "✓";
+    color: #fd8151;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Testimonios */
+.testimonios {
+    margin-top: 50px;
+}
+
+.testimonios h3 {
+    color: #2F3A4A;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonio {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.testimonio:hover {
+    transform: translateY(-5px);
+}
+
+.testimonio img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fd8151;
+}
+
+.testimonio-contenido {
+    flex: 1;
+}
+
+.testimonio p {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.8;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.testimonio .nombre {
+    color: #2F3A4A;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-align: right;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .categorias-empleo {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .testimonio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonio .nombre {
+        text-align: center;
+    }
+
+    .buscador-empleo input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .buscador-empleo button {
+        width: 100%;
+        margin-left: 0;
+    }
+}

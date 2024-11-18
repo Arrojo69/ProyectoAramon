@@ -91,8 +91,64 @@ body {
 	transition: color 0.3s ease, transform 0.3s ease;
   }
   /* Estilos para content*/
-  #Fotos img {
+/* Contenedor principal de la galería */
+#Fotos {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+	padding: 20px;
+	background-color: grey;
+  }
+  
+  /* Estilos compartidos para imágenes y videos */
+  #Fotos img,
+  #Fotos video {
 	width: 100%;
 	height: 300px;
-	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+	object-fit: cover;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Estilos específicos para videos */
+  #Fotos video {
+	cursor: pointer;
+	background-color: #000; /* Fondo negro para los videos */
+  }
+  
+  /* Efecto hover en imágenes y videos */
+  #Fotos img:hover,
+  #Fotos video:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Controles de video personalizados */
+  #Fotos video::-webkit-media-controls {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 0 0 8px 8px;
+  }
+  
+  /* Media query para pantallas más pequeñas */
+  @media screen and (max-width: 768px) {
+	#Fotos {
+	  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	  gap: 15px;
+	  padding: 15px;
+	}
+  
+	#Fotos img,
+	#Fotos video {
+	  height: 250px;
+	}
+  }
+  
+  /* Media query para pantallas muy pequeñas */
+  @media screen and (max-width: 480px) {
+	#Fotos {
+	  grid-template-columns: 1fr;
+	  gap: 10px;
+	  padding: 10px;
+	}
   }
