@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="../style/styleContacto.css" />
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+	<div class="hero-image"></div>
+  <header>
+  </header>
+	<div id="wrapper">
+		<div id="header">
+		</div>
+		<!-- MENU-->
+		<nav id='menu'>
+			<input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+			<ul>
+			  <li><a href='index.html'>Home</a></li>
+			  <li><a class='dropdown-arrow' href=../plantilla/index.html.html>Grupo ARAMON</a>
+				<ul class='sub-menus'>
+				  <li><a href='Cerler.html'>Cerler</a></li>
+				  <li><a href='Formigal.html'>Formigal-Panticosa</a></li>
+				  <li><a href='Javalambre.html'>Javalambre-Valdelinares</a></li>
+				</ul>
+			  </li>
+			  <li><a href='Galeria.html'>Galería</a></li>
+			  <li><a href='Tarifas.html'>Tarifas</a></li>
+			  <li><a href='Contacto.html'>Contacto</a></li>
+			</ul>
+		  </nav>
+        <!-- Div central -->		
+		<div id="middle">
+			<!--Panel izquierda --> 
+			<div id="content">
+				<section id="empleo">
+					<div class="container">
+                        <form>
+                            <!-- Datos de registro -->
+                            <div class="form-section">
+                                <h3>Datos de registro</h3>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="nombre">Nombre*:</label>
+                                        <input type="text" id="nombre" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dni">DNI*:</label>
+                                        <input type="text" id="dni" pattern="[0-9]{8}[A-Za-z]{1}" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="apellidos">Apellidos*:</label>
+                                        <input type="text" id="apellidos" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="provincia">Provincia:</label>
+                                        <select id="provincia">
+                                            <option value="teruel">Teruel</option>
+                                            <option value="huesca">Huesca</option>
+                                            <option value="zaragoza">Zaragoza</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                                        <input type="date" id="fecha-nacimiento">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Correo electrónico:</label>
+                                        <input type="email" id="email">
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <!-- Información del cliente -->
+                            <div class="form-section">
+                                <h3>Información del cliente</h3>
+                                <div class="form-group">
+                                    <label>Deporte practicado:</label>
+                                    <div class="checkbox-group">
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="esqui">
+                                            <label for="esqui">Esquí</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="snowboard">
+                                            <label for="snowboard">Snowboard</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="esqui-alpino">
+                                            <label for="esqui-alpino">Esquí alpino</label>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="form-group">
+                                    <label>Pistas favoritas:</label>
+                                    <div class="checkbox-group">
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="verdes">
+                                            <label for="verdes">Verdes</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="azules">
+                                            <label for="azules">Azules</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="rojas">
+                                            <label for="rojas">Rojas</label>
+                                        </div>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="negras">
+                                            <label for="negras">Negras</label>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="form-group">
+                                    <label for="info-adicional">Información adicional:</label>
+                                    <textarea id="info-adicional" placeholder="Escribe datos sobre ti, por ejemplo qué te gusta hacer esquiando: saltos, descensos, etc."></textarea>
+                                </div>
+                            </div>
+                
+                            <!-- Datos sobre la reserva -->
+                            <div class="form-section">
+                                <h3>Datos sobre la reserva</h3>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="fecha-ida">Fecha de ida:</label>
+                                        <input type="date" id="fecha-ida">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="fecha-vuelta">Fecha de vuelta:</label>
+                                        <input type="date" id="fecha-vuelta">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="albergue">Albergue de estancia:</label>
+                                        <input type="text" id="albergue">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="nivel-pista">Nivel máximo de pista:</label>
+                                    <div class="slider-container">
+                                        <input type="range" id="nivel-pista" min="1" max="5">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit">Enviar</button> 
+                        </form>
+                    </div>
+			    </section>
+			</div>  
+		</div>          
+		<!-- #middle-->
+		<footer id="footer">
+			<div class="redes">
+				<a href="https://www.instagram.com/grupoaramon/?hl=es" name="logo-instagram">
+					<ion-icon name="logo-instagram" class="logo-social"></ion-icon> 
+				</a>
+				<a href="https://www.facebook.com/grupoaramon/?locale=es_ES" name="logo-facebook"> 
+					<ion-icon name="logo-facebook" class="logo-social"></ion-icon>
+				</a>
+				<a href="https://x.com/grupoaramon?lang=es&mx=2" name="logo-twitter">
+					<ion-icon name="logo-twitter" class="logo-social"></ion-icon>
+				</a>
+			</div>
+			<div class="adicionales">
+				<a href="Empleo.html" name="empleo" class="info-adicional">Empleo</a>
+				<a href="Ayuda.html" name="ayuda" class="info-adicional">Ayuda</a>
+				<a href="Legalidad.html" name="legalidad" class="info-adicional">Legalidad</a>
+			</div>
+
+		</footer>
+		<!-- #footer -->
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

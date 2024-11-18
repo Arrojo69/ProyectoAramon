@@ -1,0 +1,173 @@
+body {
+	font: 12px Arial, Tahoma, Verdana, sans-serif;
+  }
+  
+  /* DIV CONTENEDOR GENERAL */
+  #wrapper {
+	max-width: 100%;
+	margin: 0;
+  }
+  
+  /* Header */
+  .hero-image {
+	background-image: url('../images/background.jpeg');
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh; /* Altura de la ventana */
+	z-index: -1; /* Coloca la imagen detrás del contenido */
+  }
+  
+  /* Header */
+  header { 
+	position: relative; 
+	z-index: 10; 
+	position: relative; 
+	z-index: 10; 
+	height: 150px; /* Ajusta este valor según la altura de tu logo */
+	  }
+  
+  #logo {
+	position: absolute;
+	top: 50px; 
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  /* Middle */
+  #middle {
+	background-color: grey; 
+	overflow: auto;
+  }
+  
+  #content {
+	width: 100%;
+	float: center;
+	background-color: grey; 
+  }
+  
+  /* Footer */
+  #footer {
+	display: flex; 
+	align-items: flex-start;
+	justify-content: space-between; 
+	background: #2F3A4A;
+	padding: 10px;
+	align-items: center;      /* Alinea los elementos verticalmente al centro */
+	  } 
+  .redes {
+		display: flex;           /* Activa flexbox para los iconos */
+		gap: 15px;              /* Espacio entre los iconos */
+	  }
+  .adicionales {
+		display: flex;           /* Activa flexbox para los iconos */
+		gap: 15px;              /* Espacio entre los iconos */
+	  }
+  /* Estilos para los iconos de redes sociales */
+  .logo-social { 
+	width: 40px;
+	height: 40px;
+	fill: white; 
+  }
+  
+  .logo-social:hover { 
+	transform: scale(1.2);
+	fill: #fd8151; 
+	transition: fill 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Estilos para los enlaces de texto */
+  .info-adicional {
+	font-size: 15px;
+	text-decoration: underline;
+	color: white;
+  }
+  
+  .info-adicional:hover {
+	transform: scale(1.2);
+	color: #fd8151; 
+	transition: color 0.3s ease, transform 0.3s ease;
+  }
+  /* Estilos para content*/
+  body {
+    font-family: Arial, Tahoma, Verdana, sans-serif;
+    background-color: #f0f8ff;
+    margin: 20px;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-section {
+    background-color: #b8e0f9;
+    border: 1px solid #87ceeb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.form-section h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #4682b4;
+    padding-bottom: 5px;
+    color: #2F3A4A;
+}
+
+.form-row {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.form-group {
+    margin: 0 15px 10px 0;
+}
+
+label {
+    display: inline-block;
+    margin-right: 10px;
+    min-width: 150px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    padding: 5px;
+    border: 1px solid #87ceeb;
+    border-radius: 3px;
+    width: 200px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 15px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.slider-container {
+    width: 200px;
+}
+
+input[type="range"] {
+    width: 100%;
+}

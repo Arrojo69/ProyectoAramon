@@ -90,3 +90,269 @@ body {
 	color: #fd8151; 
 	transition: color 0.3s ease, transform 0.3s ease;
   }
+  /*Content*/
+  body {
+	font: 12px Arial, Tahoma, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+/* Estilos del hero */
+.hero-container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	padding: 0 20px;
+	background-image: url(../images/iniciobg.jpg);
+}
+
+.hero-title {
+	font-size: 4em;
+	margin-bottom: 20px;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-subtitle {
+	font-size: 1.5em;
+	margin-bottom: 30px;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.cta-button {
+	background-color: #fd8151;
+	color: white;
+	padding: 15px 30px;
+	border-radius: 25px;
+	text-decoration: none;
+	font-size: 1.2em;
+	transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+	transform: scale(1.05);
+	background-color: #ff9666;
+}
+
+/* Sección de características */
+.features {
+	background: rgba(47, 58, 74, 0.9);
+	padding: 60px 20px;
+}
+
+.features-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 30px;
+}
+
+.feature-card {
+	text-align: center;
+	padding: 20px;
+}
+
+.feature-icon {
+	font-size: 2.5em;
+	color: #fd8151;
+	margin-bottom: 15px;
+}
+
+.feature-title {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+/* Sección de noticias */
+.news-section {
+	padding: 60px 20px;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.news-container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.section-title {
+	text-align: center;
+	font-size: 2.5em;
+	margin-bottom: 40px;
+	color: #fd8151;
+}
+
+.news-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 30px;
+}
+
+.news-card {
+	background: rgba(47, 58, 74, 0.9);
+	border-radius: 10px;
+	overflow: hidden;
+	transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+	transform: translateY(-5px);
+}
+
+.news-image {
+	width: 100%;
+	height: 200px;
+	background: #4a5568;
+}
+
+.news-content {
+	padding: 20px;
+}
+
+.news-date {
+	color: #fd8151;
+	font-size: 0.9em;
+	margin-bottom: 10px;
+}
+
+.news-title {
+	font-size: 1.3em;
+	margin-bottom: 10px;
+}
+.news-card {
+	background: rgba(47, 58, 74, 0.9);
+	border-radius: 10px;
+	overflow: hidden;
+	transition: transform 0.3s ease;
+	position: relative;
+}
+
+.news-image {
+	width: 100%;
+	height: 200px;
+	position: relative;
+}
+
+.news-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Nuevo overlay para las imágenes */
+.news-image::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(
+		180deg,
+		rgba(0,0,0,0.2) 0%,
+		rgba(0,0,0,0.7) 100%
+	);
+	z-index: 1;
+}
+
+.news-content {
+	padding: 20px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	background: linear-gradient(
+		0deg,
+		rgba(47, 58, 74, 1) 0%,
+		rgba(47, 58, 74, 0.8) 50%,
+		rgba(47, 58, 74, 0) 100%
+	);
+}
+
+.news-date {
+	color: #fd8151;
+	font-size: 0.9em;
+	margin-bottom: 10px;
+}
+
+.news-title {
+	font-size: 1.3em;
+	margin-bottom: 10px;
+	color: white;
+}
+
+.news-description {
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+.news-card {
+	height: 400px; /* Altura fija para todas las cards */
+}
+
+.news-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 30px;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+/* Ajuste del hover */
+.news-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.news-card {
+		height: 350px;
+	}
+}
+
+/* Estado de las pistas */
+.snow-status {
+	padding: 60px 20px;
+	background: rgba(47, 58, 74, 0.8);
+}
+
+.status-container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.status-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+}
+
+.status-card {
+	background: rgba(255, 255, 255, 0.1);
+	padding: 20px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.status-title {
+	font-size: 1.3em;
+	margin-bottom: 15px;
+	color: #fd8151;
+}
+
+.status-info {
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+
+.status-detail {
+	font-size: 0.9em;
+	color: #cccccc;
+}

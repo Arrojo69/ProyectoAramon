@@ -1,0 +1,159 @@
+body {
+	font: 12px Arial, Tahoma, Verdana, sans-serif;
+  }
+  
+  /* DIV CONTENEDOR GENERAL */
+  #wrapper {
+	max-width: 100%;
+	margin: 0;
+  }
+  
+  /* Header */
+  .hero-image {
+	background-image: url('../images/background.jpeg');
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh; /* Altura de la ventana */
+	z-index: -1; /* Coloca la imagen detrás del contenido */
+  }
+  
+  /* Header */
+  header { 
+	position: relative; 
+	z-index: 10; 
+	position: relative; 
+	z-index: 10; 
+	height: 150px; /* Ajusta este valor según la altura de tu logo */
+	  }
+  
+  #logo {
+	position: absolute;
+	top: 50px; 
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  /* Middle */
+  #middle {
+	background-color: grey; 
+	overflow: auto;
+  }
+  
+  #content {
+	width: 100%;
+	float: center;
+	background-color: grey; 
+  }
+  
+  /* Footer */
+  #footer {
+	display: flex; 
+	align-items: flex-start;
+	justify-content: space-between; 
+	background: #2F3A4A;
+	padding: 10px;
+	align-items: center;      /* Alinea los elementos verticalmente al centro */
+	  } 
+  .redes {
+		display: flex;           /* Activa flexbox para los iconos */
+		gap: 15px;              /* Espacio entre los iconos */
+	  }
+  .adicionales {
+		display: flex;           /* Activa flexbox para los iconos */
+		gap: 15px;              /* Espacio entre los iconos */
+	  }
+  /* Estilos para los iconos de redes sociales */
+  .logo-social { 
+	width: 40px;
+	height: 40px;
+	fill: white; 
+  }
+  
+  .logo-social:hover { 
+	transform: scale(1.2);
+	fill: #fd8151; 
+	transition: fill 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Estilos para los enlaces de texto */
+  .info-adicional {
+	font-size: 15px;
+	text-decoration: underline;
+	color: white;
+  }
+  
+  .info-adicional:hover {
+	transform: scale(1.2);
+	color: #fd8151; 
+	transition: color 0.3s ease, transform 0.3s ease;
+  }
+  /* Estilos para content*/
+  .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 20px;
+	color: white;
+	font-family: Arial, sans-serif;
+}
+
+.titulo-tarifas {
+	text-align: center;
+	color: white;
+	font-size: 2.5em;
+	margin-bottom: 40px;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.tarjetas-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 30px;
+	margin-bottom: 40px;
+}
+
+.tarjeta {
+	background: rgba(47, 58, 74, 0.9);
+	border-radius: 10px;
+	padding: 25px;
+	text-align: center;
+	transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+	transform: translateY(-5px);
+}
+
+.tarjeta-titulo {
+	color: #fd8151;
+	font-size: 1.8em;
+	margin-bottom: 15px;
+}
+
+.tarjeta-precio {
+	font-size: 2.5em;
+	font-weight: bold;
+	margin: 20px 0;
+}
+
+.tarjeta-detalles {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.tarjeta-detalles li {
+	margin: 10px 0;
+	font-size: 1.1em;
+}
+
+.notas {
+	background: rgba(47, 58, 74, 0.7);
+	padding: 20px;
+	border-radius: 10px;
+	margin-top: 30px;
+	font-size: 0.9em;
+	line-height: 1.6;
+}
